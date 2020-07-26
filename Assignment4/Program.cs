@@ -4,7 +4,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
 
-namespace CVSPredictionSample
+namespace Assignment4
 {
     public static class Program
     {
@@ -24,10 +24,10 @@ namespace CVSPredictionSample
             var client = new HttpClient();
 
             // Request headers - replace this example key with your valid Prediction-Key.
-            client.DefaultRequestHeaders.Add("Prediction-Key", "<294073c2443c44e0957acef679f25718>");
+            client.DefaultRequestHeaders.Add("Prediction-Key", "294073c2443c44e0957acef679f25718");
 
             // Prediction URL - replace this example URL with your valid Prediction URL.
-            string url = "<https://southcentralus.api.cognitive.microsoft.com/customvision/v3.0/Prediction/81650e3d-73bd-4937-8922-043b3c42862b/classify/iterations/Iteration1/image>";
+            string url = "https://southcentralus.api.cognitive.microsoft.com/customvision/v3.0/Prediction/81650e3d-73bd-4937-8922-043b3c42862b/classify/iterations/Iteration1/image";
 
             HttpResponseMessage response;
 
